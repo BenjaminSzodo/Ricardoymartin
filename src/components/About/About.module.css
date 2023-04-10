@@ -1,0 +1,32 @@
+.mifoto {
+    margin-top: 2%;
+    width: 250px;
+    border-radius: 40%;
+    border-style: solid;
+    width: 20%;
+    height: 200px;
+    
+
+}
+.container {
+    border-radius: 4%;
+    border-style: outset;
+    display: block; /* Establece el contenedor como un bloque */
+    width: 53%;
+    position: relative;
+    left: 25%;
+    background-color: #e5e5e5c8; /* Establece un color de fondo para el contenedor */
+}
+.main {
+    font-size: 30px;
+}
+.secondary{
+    font-size: 20px;
+}
+.text{
+    font-size: 15px;
+}
+.lists{
+   list-style: none ;
+   font-size: 15px;
+}
