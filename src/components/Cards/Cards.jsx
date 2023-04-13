@@ -4,7 +4,7 @@ export default function Cards({ characters, onClose }) {
   return (
     <div className="cards">
       <>
-        {characters.map((character) => {
+        {characters && characters.map((character) => {
           return (
             <Card
               id={character.id}

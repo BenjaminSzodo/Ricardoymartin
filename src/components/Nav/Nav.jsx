@@ -13,6 +13,9 @@ export default function Nav({onSearch,logout}) {
             <button onClick={logout}>
                 LogOut
             </button>
+            <button>
+                <NavLink to = '/favorites'>Favorites</NavLink>
+            </button>
             < SearchBar onSearch={(onSearch)} />
         </div>
         
