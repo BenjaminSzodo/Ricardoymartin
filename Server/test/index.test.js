@@ -57,4 +57,14 @@ describe('Test de RUTAS', () => {
             expect(response.body.length).toBe(2)
         })
     })
+    describe('DELETE /rickandmorty/fav/:id',()=>{
+        it('Si el ID solicitado no existe,deberia retorinar un array con todos los favs', async ()=>{
+            const response = await request.delete('/rickandmorty/fav/1200i');
+            expect(response.body.length).toBe(2)
+        })
+        it('Si el ID existe, deberia eliminarlo de fav', async()=>{
+            const response = await request.delete('/rickandmorty/fav/997');
+            expect(response.body.length).toBe(1)
+        })
+    })
 })
